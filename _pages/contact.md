@@ -15,18 +15,19 @@ We're preparing to launch CogniTune™ after completing our proof of concept and
 ## We're Growing
 
 As we expand our team, we're looking for:
-- **Developers** passionate about adaptive technology
+- **Finance & Marketing Co-Founder** - Ready to build something extraordinary together
+- **Volunteers** - Help with administrative tasks and operations
 - **Partners** in neurorehabilitation and wellness
 - **Advisors** with expertise in neurodiversity and recovery
+
+**Ready to join our mission?** Email us at [pickme@emryk.com](mailto:pickme@emryk.com)
 
 ## Community
 
 We're building a community around cognitive wellness and adaptive technology. Join us as we create something that truly makes a difference.
 
-## Follow Our Journey
-
-Stay updated on CogniTune™ development and our progress toward NeuroFlowLabs™ through our content series: "Building CogniTune™: My Journey After Two Aneurysms"
+Ignore this or don't: [goldenticket@emryk.com](mailto:goldenticket@emryk.com)
 
 ---
 
-*"Your cognitive journey matters. Let's rebuild together."*
+*"Everyone has the right to thrive"*
