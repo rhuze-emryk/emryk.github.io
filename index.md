@@ -3,17 +3,27 @@ layout: home
 title: Home
 ---
 
-## Our Mission
+## CogniTune: Cognitive Amplifier + Healing Ecosystem
 
-We believe that everyone deserves access to tools that enhance their abilities, regardless of their circumstances. Emryk envisions a future where privacy-focused AI assistance is available to those who need it most, deployed on sustainable, repurposed technology.
+The hearing aid for the mind.
 
-## Our Approach
+We empower brain injury survivors and neurodiverse individuals with adaptive technology that restores cognitive independence and rebuilds lives.
 
-What makes our platform unique is its adaptability:
+**CogniTune** isn't just another tool—it's a Cognitive Amplifier that tunes to how your brain works, whether you're recovering from injury or neurodiverse.
 
-- **Personalized Assistance** - Initially focused on cognitive assistance for those with brain injuries
-- **Adaptable Platform** - Designed to be customized for various needs and expertise areas
-- **Open & Private** - Built on open-source technologies with a commitment to privacy
-- **Accessible Technology** - Deployed on upcycled hardware to increase accessibility
+### Our Approach
 
-The same platform that helps someone navigate cognitive challenges could be adapted to create a gardening expert, a recovery companion, or a support system for elderly individuals – putting the power of AI in service of real human needs.
+What makes CogniTune unique:
+
+- **Personalized Tuning** - A Cognitive Amplifier that learns your unique cognitive rhythms and patterns
+- **Built by a Survivor** - Created by someone who understands the challenges firsthand
+- **Privacy-First** - Your data stays yours, on open-source technology
+- **Holistic Integration** - Technology paired with healing through NeuroFlowLabs
+
+### Current Status
+
+We've completed our **proof of concept** and secured **angel funding** to bring CogniTune to those who need it most. We're now building our team and forming partnerships to expand our reach.
+
+### Coming Soon
+
+**NeuroFlowLabs** - Healing spaces where technology and wellness converge, starting with pop-ups in Santa Monica.

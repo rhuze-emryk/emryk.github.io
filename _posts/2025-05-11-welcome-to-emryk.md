@@ -1,32 +1,53 @@
 ---
 layout: post
-title: "Welcome to Emryk: Technology That Heals"
+title: "Introducing CogniTune: The Hearing Aid for the Mind"
 date: 2025-05-11
-excerpt: "An introduction to Emryk and our mission to create AI healing platforms for cognitive assistance."
+excerpt: "After my own journey through brain aneurysms, I'm building a Cognitive Amplifier for people whose brains work differently."
 ---
 
-# Welcome to Emryk
+# Why CogniTune Exists
 
-Emryk was born from a personal journey of recovery and healing. After experiencing a significant health setback that affected communication and cognitive abilities, our founder created a private AI system to guide his recovery process.
+Three years ago, brain aneurysms changed how I think, remember, and navigate the world. Traditional productivity tools weren't built for brains that experience fatigue, memory gaps, or executive dysfunction. So I built something different.
 
-## Why Emryk Exists
+**CogniTune** isn't another tech solution trying to be everything to everyone. It's a Cognitive Amplifier - the hearing aid for the mind - designed specifically for brain injury survivors and neurodiverse individuals.
 
-We believe that AI technology should be:
+## What Makes CogniTune Different
 
-1. **Accessible** - Available to those who need it most, regardless of circumstances
-2. **Private** - Your data should remain yours
-3. **Adaptive** - Able to grow and change with your needs
-4. **Sustainable** - Built on repurposed hardware to reduce environmental impact
+### 1. Cognitive Amplification, Not Replacement
+CogniTune learns your cognitive patterns:
+- When you're most alert and when you need breaks
+- How complex tasks need to be broken down for your brain
+- Your unique triggers for cognitive fatigue
 
-## What We're Building
+Just like a hearing aid amplifies sound in the way that's right for you, CogniTune amplifies your cognitive abilities in ways that match your brain's patterns.
 
-Our initial focus is on cognitive assistance platforms for individuals with brain injuries or cognitive challenges. These systems are designed to:
+### 2. Built by a Survivor
+Every feature comes from lived experience:
+- Understanding the frustration of lost words
+- Knowing how overwhelm feels in your body
+- Designing for the reality of non-linear healing
 
-- Provide personalized support for daily tasks
-- Adapt to individual learning patterns and needs
-- Run locally, without sending sensitive data to the cloud
-- Function on affordable, repurposed hardware
+### 3. Privacy as a Foundation
+Your cognitive data is deeply personal:
+- Everything runs locally on your device
+- Open-source code you can inspect and modify
+- No corporate surveillance of your brain patterns
 
-## Join Us
+## Beyond Technology: NeuroFlowLabs
 
-We're in the early stages of this journey, and we welcome collaboration, feedback, and support. If you're interested in our mission or have ideas to share, please [reach out](mailto:info@emryk.com).
+CogniTune is just the beginning. We're planning **NeuroFlowLabs** - physical spaces where cognitive amplification meets holistic healing:
+
+- Sound baths that synchronize with cognitive training
+- Music therapy integrated with our Cognitive Amplifier
+- Community gatherings for peer support
+- Integration with therapy and rehabilitation programs
+
+## The Journey So Far
+
+We've successfully completed our proof of concept and secured angel funding to bring CogniTune to those who need it most. Now we're building our team and forming partnerships to expand our reach.
+
+**This is personal technology for a deeply personal journey.**
+
+---
+
+*Interested in learning more? Email us at [info@emryk.com](mailto:info@emryk.com)*
