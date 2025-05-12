@@ -7,7 +7,7 @@ description: >-
   through privacy-focused, accessible technology.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://emryk.com"
-twitter_username: emryk
+#twitter_username: emryk
 github_username: emryk
 
 # Build settings
@@ -29,8 +29,6 @@ navigation:
     url: /about/
   - title: Our Approach
     url: /approach/
-  - title: Consulting
-    url: /consulting/
   - title: Contact
     url: /contact/
 
