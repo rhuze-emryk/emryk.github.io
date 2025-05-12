@@ -1,13 +1,13 @@
 # Site settings
-title: Emryk
-tagline: Technology That Heals
+title: Emryk™
+tagline: The hearing aid for the mind
 email: info@emryk.com
 description: >-
-  AI Healing Platforms for Cognitive Assistance, designed to enhance human abilities 
-  through privacy-focused, accessible technology.
+  We empower brain injury survivors and neurodiverse individuals with CogniTune™ Cognitive Amplifiers
+  and NeuroFlowLabs™ healing spaces that restore cognitive independence and rebuild lives.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://emryk.com"
-#twitter_username: emryk
+twitter_username: emryk
 github_username: emryk
 
 # Build settings
