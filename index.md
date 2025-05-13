@@ -15,7 +15,7 @@ What makes BrainAmp™ unique:
 
 - **Personalized Tuning** - A Cognitive Amplifier that learns your unique cognitive rhythms and patterns
 - **Built by a Survivor** - Created by someone who understands the challenges firsthand
-- **Privacy-First** - Your data stays yours, on open-source technology
+- **Privacy-First** - Your data stays on your hardware. No survelliance.
 - **Holistic Integration** - Technology paired with healing through BrainAmpCamps™
 
 ### Current Status
