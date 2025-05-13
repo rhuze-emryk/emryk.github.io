@@ -6,11 +6,11 @@ permalink: /approach/
 
 # Cognitive Amplification That Tunes to You
 
-CogniTune™ isn't built for everyone - it's a Cognitive Amplifier designed for individuals whose brains work differently, whether through injury or neurodiversity.
+BrainAmp™ isn't built for everyone - it's a Cognitive Amplifier designed for individuals whose brains work differently, whether through injury or neurodiversity.
 
 *The hearing aid for the mind.*
 
-## CogniTune™ Core Features
+## BrainAmp™ Core Features
 
 ### Personalized Tuning
 - **Learns Your Patterns**: Understands your unique cognitive rhythms and energy levels
@@ -27,13 +27,13 @@ CogniTune™ isn't built for everyone - it's a Cognitive Amplifier designed for 
 - **Local Processing**: Your personal information never leaves your device
 - **No Surveillance**: We amplify your cognition, we don't monitor it
 
-## The NeuroFlowLabs™ Ecosystem
+## The BrainAmpCamps™ Ecosystem
 
 Beyond cognitive amplification, we're building spaces where healing happens:
 
 ### Holistic Integration
 - Sound baths that complement cognitive training sessions
-- Therapy integration with real-time CogniTune™ insights
+- Therapy integration with real-time BrainAmp™ insights
 - Community events for peer support and shared learning
 
 ### Evidence-Based Approach
@@ -55,6 +55,6 @@ Beyond cognitive amplification, we're building spaces where healing happens:
 
 ## Why It Matters
 
-Every brain deserves a Cognitive Amplifier that tunes to its unique patterns. CogniTune™ represents a future where cognitive differences are met with adaptive solutions, not one-size-fits-all tools.
+Every brain deserves a Cognitive Amplifier that tunes to its unique patterns. BrainAmp™ represents a future where cognitive differences are met with adaptive solutions, not one-size-fits-all tools.
 
 *This is personal technology for a very personal journey.*

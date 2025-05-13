@@ -6,9 +6,9 @@ permalink: /contact/
 
 # Join the Cognitive Revolution
 
-## Interested in CogniTune™?
+## Interested in BrainAmp™?
 
-We're preparing to launch CogniTune™ after completing our proof of concept and securing angel funding. If you're interested in learning more about our Cognitive Amplifier or want to stay updated on our progress:
+We're preparing to launch BrainAmp™ after completing our proof of concept and securing angel funding. If you're interested in learning more about our Cognitive Amplifier or want to stay updated on our progress:
 
 **Email**: [info@emryk.com](mailto:info@emryk.com)
 
@@ -26,8 +26,8 @@ As we expand our team, we're looking for:
 
 We're building a community around cognitive wellness and adaptive technology. Join us as we create something that truly makes a difference.
 
-Ignore this or don't: [goldenticket@emryk.com](mailto:goldenticket@emryk.com)
+Something special awaits those who seek it: [goldenticket@emryk.com](mailto:goldenticket@emryk.com)
 
 ---
 
-*"Everyone has the right to thrive"*
+*"Your cognitive journey matters. Let's rebuild together."*

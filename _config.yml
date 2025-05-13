@@ -1,10 +1,10 @@
 # Site settings
-title: Emryk™
+title: Emryk
 tagline: The hearing aid for the mind
 email: info@emryk.com
 description: >-
-  We empower brain injury survivors and neurodiverse individuals with CogniTune™ Cognitive Amplifiers
-  and NeuroFlowLabs™ healing spaces that restore cognitive independence and rebuild lives.
+  We empower brain injury survivors and neurodiverse individuals with BrainAmp™ Cognitive Amplifiers
+  and BrainAmpCamps™ healing spaces that restore cognitive independence and rebuild lives.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://emryk.com"
 twitter_username: emryk
