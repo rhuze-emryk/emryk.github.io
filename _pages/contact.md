@@ -26,8 +26,8 @@ As we expand our team, we're looking for:
 
 We're building a community around cognitive wellness and adaptive technology. Join us as we create something that truly makes a difference.
 
-Something special awaits those who seek it: [goldenticket@emryk.com](mailto:goldenticket@emryk.com)
+We don't even know what this is: [goldenticket@emryk.com](mailto:goldenticket@emryk.com)
 
 ---
 
-*"Your cognitive journey matters. Let's rebuild together."*
+*"The greatest untapped resource is the disabled community. There is so much potential to be unlocked"*
