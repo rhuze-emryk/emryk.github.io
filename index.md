@@ -5,11 +5,9 @@ title: Home
 
 ## BrainAmp™: Cognitive Amplifier + Healing Ecosystem
 
-The hearing aid for the mind.
-
 We empower brain injury survivors and neurodiverse individuals with adaptive technology that restores cognitive independence and rebuilds lives.
 
-**BrainAmp™** isn't just another tool—it's a Cognitive Amplifier that tunes to how your brain works, whether you're recovering from injury or neurodiverse.
+**BrainAmp™** - the hearing aid for the mind - isn't just another tool. It's a Cognitive Amplifier that tunes to how your brain works, whether you're recovering from injury or neurodiverse.
 
 ### Our Approach
 
