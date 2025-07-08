@@ -3,252 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- SEO & Social Sharing -->
-  <title>Emryk - Your AI Companion for Cognitive Recovery</title>
-  <meta name="description" content="Emryk is a private, reliable AI assistant designed to help bridge cognitive gaps caused by brain injury, ADHD, and executive dysfunction.">
+  <title>Emryk™ - Your AI Companion for Cognitive Recovery</title>
+  <meta name="description" content="Emryk is a private, reliable AI assistant designed to bridge cognitive gaps and empower independence.">
   
   <style>
-    /* Your existing CSS is excellent - clean and modern. No changes needed here. */
     :root {
-      --bg: #0A0E1A;
-      --text: #E2E8F0;
-      --text-dim: #94A3B8;
-      --accent: #3B82F6;
-      --accent-hover: #2563EB;
-      --surface: #1E293B;
-      --border: #334155;
+      --bg: #0A0E1A; --text: #E2E8F0; --text-dim: #94A3B8; --surface: #1E293B;
+      --border: #334155; --logo-orange: #f78c2a; --logo-orange-hover: #e07d25;
+      --logo-blue: #0093d1;
     }
-
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.6;
-      color: var(--text);
-      background: var(--bg);
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-      position: relative;
+      line-height: 1.6; color: var(--text); background: var(--bg);
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; padding: 4rem 2rem; position: relative;
     }
-
     body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
+      content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
       background-image: 
-        linear-gradient(rgba(59, 130, 246, 0.03) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
-      background-size: 50px 50px;
-      pointer-events: none;
+        linear-gradient(rgba(0, 147, 209, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 147, 209, 0.04) 1px, transparent 1px);
+      background-size: 50px 50px; pointer-events: none;
     }
-
-    .container {
-      max-width: 720px;
-      width: 100%;
-      text-align: center;
-      position: relative;
-      z-index: 1;
-    }
-
+    .container { max-width: 720px; width: 100%; text-align: center; position: relative; z-index: 1; }
     .logo {
-      font-size: 4rem;
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      margin-bottom: 2rem;
+      font-size: 4rem; font-weight: 900; letter-spacing: -0.04em; margin-bottom: 2rem;
       background: linear-gradient(to bottom, #fff 0%, #94A3B8 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
-
-    .tagline {
-      font-size: 2.25rem;
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-      line-height: 1.3;
-    }
-
+    .tagline { font-size: 2.25rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.3; }
     .description {
-      font-size: 1.25rem;
-      color: var(--text-dim);
-      margin-bottom: 3rem;
-      line-height: 1.7;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
+      font-size: 1.25rem; color: var(--text-dim); margin-bottom: 3rem;
+      line-height: 1.7; max-width: 600px; margin-left: auto; margin-right: auto;
     }
-    
-    .description strong {
-      color: var(--text);
-      font-weight: 600;
-    }
-
-    .features {
-      display: flex;
-      gap: 1.5rem;
-      justify-content: center;
-      margin-bottom: 3rem;
-      flex-wrap: wrap;
-    }
-
+    .description strong { color: var(--text); font-weight: 600; }
+    .features { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 4rem; flex-wrap: wrap; }
     .feature {
-      background-color: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem;
-      flex-basis: 180px;
-      flex-grow: 1;
+      background-color: var(--surface); border: 1px solid var(--border);
+      border-radius: 8px; padding: 1rem; flex-basis: 180px; flex-grow: 1; text-align: left;
     }
-
-    .feature h3 {
-      font-size: 1rem;
-      color: var(--text);
-      margin-bottom: 0.25rem;
-    }
-    
-    .feature p {
-      font-size: 0.875rem;
-      color: var(--text-dim);
-    }
-    
-    .beta-form {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    .form-group {
-      display: flex;
-      gap: 0.5rem;
-      margin-bottom: 1rem;
-    }
-
+    .feature h3 { font-size: 1rem; color: var(--text); margin-bottom: 0.25rem; }
+    .feature p { font-size: 0.875rem; color: var(--text-dim); }
+    .beta-form { max-width: 400px; margin: 4rem auto 0 auto; }
+    .form-group { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
     .form-input {
-      flex-grow: 1;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      color: var(--text);
-      padding: 0.75rem 1rem;
-      border-radius: 0.375rem;
-      font-size: 1rem;
+      flex-grow: 1; background: var(--surface); border: 1px solid var(--border);
+      color: var(--text); padding: 0.75rem 1rem; border-radius: 0.375rem; font-size: 1rem;
       transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
-
     .form-input:focus {
-      outline: none;
-      border-color: var(--accent);
-      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+      outline: none; border-color: var(--logo-orange);
+      box-shadow: 0 0 0 3px rgba(247, 140, 42, 0.3);
     }
-
     .cta-button {
-      display: inline-block;
-      background: var(--accent);
-      color: white;
-      padding: 0.75rem 1.5rem;
-      width: 100%;
-      border: none;
-      cursor: pointer;
-      border-radius: 0.375rem;
-      font-weight: 600;
-      font-size: 1rem;
-      text-decoration: none;
-      transition: all 0.2s ease;
+      display: inline-block; background: var(--logo-orange); color: white;
+      padding: 0.75rem 1.5rem; width: 100%; border: none; cursor: pointer;
+      border-radius: 0.375rem; font-weight: 600; font-size: 1rem;
+      text-decoration: none; transition: all 0.2s ease;
     }
-
-    .cta-button:hover {
-      background: var(--accent-hover);
+    .cta-button:hover { background: var(--logo-orange-hover); }
+    .form-note { font-size: 0.875rem; color: var(--text-dim); }
+    .founder-story {
+        margin-top: 5rem; padding-top: 4rem; border-top: 1px solid var(--border); text-align: left;
     }
-    
-    .form-note {
-      font-size: 0.875rem;
-      color: var(--text-dim);
+    .founder-story-header { text-align: center; margin-bottom: 2rem; }
+    .founder-story-header h2 { font-size: 1.75rem; font-weight: 700; color: var(--text); }
+    .founder-story-header p { font-size: 1.125rem; color: var(--text-dim); margin-top: 0.5rem; }
+    .founder-story-content {
+        font-size: 1.125rem; color: var(--text-dim); line-height: 1.8;
+        background: rgba(30, 41, 59, 0.5); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);
     }
-
+    .founder-story-content strong { color: var(--logo-orange); font-weight: 600; }
     .footer {
-      position: absolute;
-      bottom: 1.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 0.875rem;
-      color: var(--text-dim);
+      margin-top: 4rem; padding-top: 2rem; position: relative;
+      bottom: auto; left: auto; transform: none;
+      font-size: 0.875rem; color: var(--text-dim);
     }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     .container > * { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
-    .logo { animation-delay: 0s; }
-    .tagline { animation-delay: 0.1s; }
-    .description { animation-delay: 0.2s; }
-    .features { animation-delay: 0.3s; }
-    .beta-form { animation-delay: 0.4s; }
-
+    h1, h2, .description, .features { animation-delay: 0s; }
+    .founder-story { animation-delay: 0.1s; } .beta-form { animation-delay: 0.2s; }
     @media (max-width: 640px) {
-      .logo { font-size: 3rem; }
-      .tagline { font-size: 1.75rem; }
-      .description { font-size: 1.125rem; }
-      .features { flex-direction: column; }
+      body { padding: 2rem 1rem; } .logo { font-size: 3rem; } .tagline { font-size: 1.75rem; }
+      .description { font-size: 1.125rem; } .features { flex-direction: column; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    
-    <!-- SECTION: Header -->
-    <h1 class="logo">EMRYK</h1>
-    <h2 class="tagline">An AI that remembers, so you can focus.</h2>
-    
-    <!-- SECTION: Description -->
+    <h1 class="logo">EMRYK&trade;</h1>
+    <h2 class="tagline">An AI that remembers, so you can rebuild.</h2>
     <p class="description">
-      Executive dysfunction and memory loss can feel like invisible walls. Emryk is a
-      <strong>private, reliable AI companion</strong> designed to help bridge cognitive gaps—acting as your
-      external memory and planning partner.
-      <br><br>
-      Born from its founder's own recovery from a brain injury, Emryk's core technology ensures it is trustworthy and hallucination-free.
+      For those with brain injuries or executive dysfunction, the world can feel overwhelming. Emryk&trade; is your
+      <strong>private, reliable AI companion,</strong> designed to bridge cognitive gaps and empower your independence.
     </p>
     
-    <!-- SECTION: Features/Principles (replaces vague "proof points") -->
     <div class="features">
-      <div class="feature">
-        <h3>Private by Design</h3>
-        <p>Your data is yours alone. All information is stored and processed in your browser, not on our servers.</p>
-      </div>
-      <div class="feature">
-        <h3>Reliable & Trustworthy</h3>
-        <p>Built with a novel technique to eliminate AI hallucinations, providing answers you can depend on.</p>
-      </div>
-       <div class="feature">
-        <h3>Field-Proven Technology</h3>
-        <p>Our core AI was pressure-tested on complex technical tasks to ensure its robustness and capability.</p>
-      </div>
+      <div class="feature"><h3>Private by Design</h3><p>Your data and conversations are yours alone, processed securely in your browser.</p></div>
+      <div class="feature"><h3>Reliable & Trustworthy</h3><p>Built with novel technology to eliminate hallucinations, providing answers you can depend on.</p></div>
+      <div class="feature"><h3>Human-Centered</h3><p>Designed to augment your abilities, not replace them, fostering independence and confidence.</p></div>
     </div>
     
-    <!-- SECTION: Beta Signup Form -->
-    <div class="beta-form">
-      <!-- 
-        HOW TO USE THIS FORM:
-        For simple deployment, use a service like Netlify. Just add 'data-netlify="true"' to the <form> tag
-        and Netlify's bots will handle the backend automatically.
-        Example: <form name="beta" method="POST" data-netlify="true">
-      -->
-      <form name="beta-interest" method="POST">
-        <div class="form-group">
-          <input type="email" name="email" class="form-input" placeholder="Enter your email address" required>
-        </div>
-        <button type="submit" class="cta-button">Request a Private Beta Invite</button>
-      </form>
-      <p class="form-note">We're inviting a small group of initial testers. We respect your privacy.</p>
+    <div class="founder-story">
+      <div class="founder-story-header">
+        <h2>Built From Necessity.</h2>
+        <p>This isn't theory. This is my life.</p>
+      </div>
+      <div class="founder-story-content">
+        <p>
+          Nine months ago, I hit a low point. Disabled, with no income, and facing deep insecurity, I felt powerless. That feeling brought to mind one of my heroes, the musician <strong>Vic Chesnutt</strong>—a brilliant, quadriplegic artist lost to despair over a system that failed him. His story became my mission: How many other capable people are struggling, their potential locked away by challenges that the right tools could help overcome?
+        </p>
+        <p style="margin-top: 1.5em;">
+          The spark for Emryk&trade; was a realization: a truly private AI could become a trusted partner, trained on my life without surveillance. But a tool alone isn't enough. It needed empathy. That's why the vision grew into a <strong>collaborative peer-support system.</strong>
+        </p>
+        <p style="margin-top: 1.5em;">
+          Imagine an AI that learns an individual's unique needs, guided by the insight of their human peer support specialist. As the specialist adapts to the patient, so does the AI. This is the future of Emryk&trade;—and I'm already working with my own specialist to prove it. This is more than a product; it’s a mission to unlock potential, and to do it with privacy, dignity, and independence.
+        </p>
+      </div>
     </div>
 
+    <div class="beta-form">
+      <form name="beta-interest" method="POST" data-netlify="true">
+        <div class="form-group">
+          <input type="email" name="email" class="form-input" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" class="cta-button">Request Private Beta Invite</button>
+      </form>
+      <p class="form-note">Invites are limited. We respect your privacy.</p>
+    </div>
   </div>
   
-  <!-- SECTION: Footer -->
-  <footer class="footer">
-    &copy; 2024 Emryk LLC. All Rights Reserved.
-  </footer>
+  <footer class="footer">&copy; 2024 Emryk LLC. All Rights Reserved.</footer>
 </body>
 </html>
