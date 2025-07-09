@@ -6,106 +6,262 @@
   <title>Emryk™ - How can we help you?</title>
   <meta name="description" content="Emryk. Combining Custom Reasoning Engines with Peer Support Services">
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
     :root {
-      --bg: #0A0E1A; --text: #E2E8F0; --text-dim: #94A3B8; --surface: #1E293B;
-      --border: #334155; --logo-orange: #f78c2a; --logo-orange-hover: #e07d25;
-      --logo-blue: #0093d1;
+      --bg-primary: #0B0F1A;
+      --bg-secondary: #1A1F2E;
+      --bg-tertiary: #2A2F3E;
+      --text-primary: #F8FAFC;
+      --text-secondary: #CBD5E1;
+      --text-tertiary: #94A3B8;
+      --accent-primary: #6366F1;
+      --accent-secondary: #8B5CF6;
+      --accent-tertiary: #EC4899;
+      --accent-orange: #F59E0B;
+      --accent-orange-hover: #D97706;
+      --surface-primary: rgba(30, 41, 59, 0.8);
+      --surface-secondary: rgba(51, 65, 85, 0.6);
+      --border-primary: rgba(148, 163, 184, 0.2);
+      --border-secondary: rgba(148, 163, 184, 0.1);
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+      --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      --gradient-tertiary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      --gradient-bg: linear-gradient(135deg, #0B0F1A 0%, #1A1F2E 50%, #2A2F3E 100%);
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-      line-height: 1.6; color: var(--text); background: var(--bg);
-      min-height: 100vh; display: flex; flex-direction: column;
-      align-items: center; justify-content: center; padding: 4rem 2rem; position: relative;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.7; color: var(--text-primary); 
+      background: var(--gradient-bg);
+      min-height: 100vh; position: relative;
+      font-weight: 400; letter-spacing: -0.01em;
     }
     body::before {
       content: ""; position: fixed; top: 0; left: 0; right: 0; bottom: 0;
       background-image: 
-        linear-gradient(rgba(0, 147, 209, 0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 147, 209, 0.04) 1px, transparent 1px);
-      background-size: 50px 50px; pointer-events: none;
+        radial-gradient(circle at 25% 25%, rgba(99, 102, 241, 0.1) 0%, transparent 25%),
+        radial-gradient(circle at 75% 75%, rgba(139, 92, 246, 0.1) 0%, transparent 25%),
+        linear-gradient(rgba(99, 102, 241, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(99, 102, 241, 0.02) 1px, transparent 1px);
+      background-size: 800px 800px, 600px 600px, 60px 60px, 60px 60px;
+      animation: backgroundShift 20s ease-in-out infinite;
+      pointer-events: none; z-index: 0;
     }
-    .container { max-width: 720px; width: 100%; text-align: center; position: relative; z-index: 1; }
+    @keyframes backgroundShift {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(-20px, -20px); }
+    }
+    .container { 
+      max-width: 1200px; width: 100%; margin: 0 auto; padding: 0 2rem;
+      position: relative; z-index: 1;
+    }
+    .hero-section {
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; text-align: center;
+      padding: 4rem 0;
+    }
+    .section {
+      padding: 6rem 0; position: relative;
+    }
+    .section-inner {
+      max-width: 800px; margin: 0 auto;
+    }
     .logo {
-      font-size: 4rem; font-weight: 900; letter-spacing: -0.04em; margin-bottom: 2rem;
-      background: linear-gradient(to bottom, #fff 0%, #94A3B8 100%);
+      font-size: 5rem; font-weight: 700; letter-spacing: -0.06em; margin-bottom: 1.5rem;
+      background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-primary) 50%, var(--accent-secondary) 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+      position: relative;
+      animation: logoGlow 3s ease-in-out infinite alternate;
     }
-    .tagline { font-size: 2.25rem; font-weight: 700; margin-bottom: 1.5rem; line-height: 1.3; }
+    @keyframes logoGlow {
+      0% { filter: brightness(1); }
+      100% { filter: brightness(1.2); }
+    }
+    .tagline { 
+      font-size: 2.5rem; font-weight: 600; margin-bottom: 2rem; line-height: 1.2;
+      color: var(--text-primary); letter-spacing: -0.02em;
+    }
     .description {
-      font-size: 1.25rem; color: var(--text-dim); margin-bottom: 3rem;
-      line-height: 1.7; max-width: 600px; margin-left: auto; margin-right: auto;
+      font-size: 1.375rem; color: var(--text-secondary); margin-bottom: 4rem;
+      line-height: 1.8; max-width: 700px; margin-left: auto; margin-right: auto;
+      font-weight: 400;
     }
-    .description strong { color: var(--text); font-weight: 600; }
-    .features { display: flex; gap: 1.5rem; justify-content: center; margin-bottom: 4rem; flex-wrap: wrap; }
+    .description strong { color: var(--text-primary); font-weight: 600; }
+    .features { 
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+      gap: 2rem; margin-bottom: 6rem; max-width: 1000px; margin-left: auto; margin-right: auto;
+    }
     .feature {
-      background-color: var(--surface); border: 1px solid var(--border);
-      border-radius: 8px; padding: 1rem; flex-basis: 180px; flex-grow: 1; text-align: left;
+      background: var(--surface-primary); border: 1px solid var(--border-primary);
+      border-radius: 16px; padding: 2rem; text-align: left;
+      backdrop-filter: blur(10px); position: relative;
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: var(--shadow-lg);
     }
-    .feature h3 { font-size: 1rem; color: var(--text); margin-bottom: 0.25rem; }
-    .feature p { font-size: 0.875rem; color: var(--text-dim); }
-    .beta-form { max-width: 400px; margin: 4rem auto 0 auto; }
-    .form-group { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+    .feature::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+      border-radius: 16px; opacity: 0; transition: opacity 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-8px); box-shadow: var(--shadow-xl);
+      border-color: var(--accent-primary);
+    }
+    .feature:hover::before { opacity: 1; }
+    .feature h3 { 
+      font-size: 1.25rem; color: var(--text-primary); margin-bottom: 1rem; 
+      font-weight: 600; position: relative; z-index: 1;
+    }
+    .feature p { 
+      font-size: 1rem; color: var(--text-secondary); line-height: 1.6;
+      position: relative; z-index: 1;
+    }
+    .beta-form { 
+      max-width: 500px; margin: 0 auto;
+      background: var(--surface-primary); padding: 3rem; border-radius: 20px;
+      backdrop-filter: blur(20px); border: 1px solid var(--border-primary);
+      box-shadow: var(--shadow-xl);
+    }
+    .form-group { margin-bottom: 1.5rem; }
     .form-input {
-      flex-grow: 1; background: var(--surface); border: 1px solid var(--border);
-      color: var(--text); padding: 0.75rem 1rem; border-radius: 0.375rem; font-size: 1rem;
-      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      width: 100%; background: var(--bg-secondary); border: 1px solid var(--border-primary);
+      color: var(--text-primary); padding: 1rem 1.5rem; border-radius: 12px; font-size: 1rem;
+      transition: all 0.3s ease; font-family: inherit;
     }
     .form-input:focus {
-      outline: none; border-color: var(--logo-orange);
-      box-shadow: 0 0 0 3px rgba(247, 140, 42, 0.3);
+      outline: none; border-color: var(--accent-primary);
+      box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+      background: var(--bg-primary);
+    }
+    .form-input::placeholder {
+      color: var(--text-tertiary);
     }
     .cta-button {
-      display: inline-block; background: var(--logo-orange); color: white;
-      padding: 0.75rem 1.5rem; width: 100%; border: none; cursor: pointer;
-      border-radius: 0.375rem; font-weight: 600; font-size: 1rem;
-      text-decoration: none; transition: all 0.2s ease;
+      display: inline-block; background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+      color: white; padding: 1rem 2rem; width: 100%; border: none; cursor: pointer;
+      border-radius: 12px; font-weight: 600; font-size: 1rem; font-family: inherit;
+      text-decoration: none; transition: all 0.3s ease;
+      position: relative; overflow: hidden;
     }
-    .cta-button:hover { background: var(--logo-orange-hover); }
-    .form-note { font-size: 0.875rem; color: var(--text-dim); }
+    .cta-button::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(135deg, var(--accent-secondary) 0%, var(--accent-tertiary) 100%);
+      opacity: 0; transition: opacity 0.3s ease;
+    }
+    .cta-button:hover::before { opacity: 1; }
+    .cta-button:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .cta-button span { position: relative; z-index: 1; }
+    .form-note { 
+      font-size: 0.875rem; color: var(--text-tertiary); 
+      text-align: center; margin-top: 1rem;
+    }
     .founder-story {
-        margin-top: 5rem; padding-top: 4rem; border-top: 1px solid var(--border); text-align: left;
+      background: var(--surface-primary); border-radius: 24px; padding: 4rem;
+      backdrop-filter: blur(20px); border: 1px solid var(--border-primary);
+      box-shadow: var(--shadow-lg); text-align: left;
     }
-    .founder-story-header { text-align: center; margin-bottom: 2rem; }
-    .founder-story-header h2 { font-size: 1.75rem; font-weight: 700; color: var(--text); }
-    .founder-story-header p { font-size: 1.125rem; color: var(--text-dim); margin-top: 0.5rem; }
+    .founder-story-header { text-align: center; margin-bottom: 3rem; }
+    .founder-story-header h2 { 
+      font-size: 2.25rem; font-weight: 600; color: var(--text-primary); 
+      margin-bottom: 1rem; letter-spacing: -0.02em;
+    }
+    .founder-story-header p { 
+      font-size: 1.25rem; color: var(--text-secondary); 
+      font-weight: 400; font-style: italic;
+    }
     .founder-story-content {
-        font-size: 1.125rem; color: var(--text-dim); line-height: 1.8;
-        background: rgba(30, 41, 59, 0.5); padding: 2rem; border-radius: 8px; border: 1px solid var(--border);
+      font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8;
+      background: var(--bg-secondary); padding: 2.5rem; border-radius: 16px; 
+      border: 1px solid var(--border-secondary);
     }
-    .founder-story-content strong { color: var(--logo-orange); font-weight: 600; }
+    .founder-story-content strong { color: var(--accent-orange); font-weight: 600; }
+    .founder-story-content p { margin-bottom: 1.5rem; }
+    .founder-story-content p:last-child { margin-bottom: 0; }
     .footer {
-      margin-top: 4rem; padding-top: 2rem; position: relative;
-      bottom: auto; left: auto; transform: none;
-      font-size: 0.875rem; color: var(--text-dim);
+      margin-top: 6rem; padding: 3rem 0; text-align: center;
+      border-top: 1px solid var(--border-secondary);
+      font-size: 0.875rem; color: var(--text-tertiary);
     }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-    .container > * { animation: fadeIn 0.6s ease-out forwards; opacity: 0; }
-    h1, h2, .description, .features { animation-delay: 0s; }
-    .founder-story { animation-delay: 0.1s; } .beta-form { animation-delay: 0.2s; }
-    @media (max-width: 640px) {
-      body { padding: 2rem 1rem; } .logo { font-size: 3rem; } .tagline { font-size: 1.75rem; }
-      .description { font-size: 1.125rem; } .features { flex-direction: column; }
+    @keyframes fadeInUp { 
+      from { opacity: 0; transform: translateY(30px); } 
+      to { opacity: 1; transform: translateY(0); } 
+    }
+    @keyframes fadeIn { 
+      from { opacity: 0; } 
+      to { opacity: 1; } 
+    }
+    .hero-section > * { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; }
+    .logo { animation-delay: 0.1s; }
+    .tagline { animation-delay: 0.2s; }
+    .description { animation-delay: 0.3s; }
+    .features { animation: fadeIn 1s ease-out 0.5s forwards; opacity: 0; }
+    .feature { animation: fadeInUp 0.6s ease-out forwards; opacity: 0; }
+    .feature:nth-child(1) { animation-delay: 0.6s; }
+    .feature:nth-child(2) { animation-delay: 0.7s; }
+    .feature:nth-child(3) { animation-delay: 0.8s; }
+    .founder-story { animation: fadeInUp 0.8s ease-out 0.9s forwards; opacity: 0; }
+    .beta-form { animation: fadeInUp 0.8s ease-out 1s forwards; opacity: 0; }
+    @media (max-width: 768px) {
+      .container { padding: 0 1rem; }
+      .hero-section { padding: 2rem 0; }
+      .section { padding: 4rem 0; }
+      .logo { font-size: 3.5rem; }
+      .tagline { font-size: 2rem; }
+      .description { font-size: 1.25rem; }
+      .features { grid-template-columns: 1fr; gap: 1.5rem; }
+      .feature { padding: 1.5rem; }
+      .founder-story { padding: 2rem; }
+      .founder-story-header h2 { font-size: 1.875rem; }
+      .beta-form { padding: 2rem; }
+    }
+    @media (max-width: 480px) {
+      .logo { font-size: 2.5rem; }
+      .tagline { font-size: 1.5rem; }
+      .description { font-size: 1.125rem; }
+      .founder-story { padding: 1.5rem; }
+      .founder-story-content { padding: 1.5rem; }
+      .beta-form { padding: 1.5rem; }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1 class="logo">EMRYK</h1>
-    <h2 class="tagline">Enable Enhance Evolve</h2>
-    <p class="description">
-       Emryk was formed to create Tzu&trade;, a system that turns AI into a customized Reasoning Enging (RE). Our intial focus is  on high-functioning TBI patients like myself. 
-      <strong>I am the first customer.</strong> My training system and RE work. Tzu&trade; is proof. 
-    </p>
+    <section class="hero-section">
+      <h1 class="logo">EMRYK</h1>
+      <h2 class="tagline">Enable Enhance Evolve</h2>
+      <p class="description">
+        Emryk was formed to create Tzu&trade;, a system that turns AI into a customized Reasoning Engine (RE). Our initial focus is on high-functioning TBI patients like myself. 
+        <strong>I am the first customer.</strong> My training system and RE work. Tzu&trade; is proof.
+      </p>
+      
+      <div class="features">
+        <div class="feature">
+          <h3>No Ads. No Tracking. No Surveillance.</h3>
+          <p>Your data and conversations are yours alone, processed securely in your browser. Tzu&trade; saves no data.</p>
+        </div>
+        <div class="feature">
+          <h3>Based on Open-Source and FSF Free Software</h3>
+          <p>Built securely, by default. Free Software is the beating heart of this project. Free as in freedom.</p>
+        </div>
+        <div class="feature">
+          <h3>Human In the Loop</h3>
+          <p>Tzu™ requires a certified Peer Support Specialist to train the model on the user's needs. Emryk™ firmly believes that there must be a human involved in any RE or AI systems.</p>
+        </div>
+      </div>
+    </section>
     
-    <div class="features">
-      <div class="feature"><h3>No Ads. No Tracking. No surveillance.</h3><p>Your data and conversations are yours alone, processed securely in your browser. Tzu&trade; saves no data.</p></div>
-      <div class="feature"><h3>Based on Open-Source and FSF Free Software</h3><p>Built securely, by default. Free Software is the beating heart of this project. Free as in freedom.</p></div>
-      <div class="feature"><h3>Human In the Loop<h3><p>Tzu™ requires a certified Peer Support Specialist to train the model on the user's needs. Emryk™ firmly believes that there must be a human involved in any RE or AI systems</p></div>
-    </div>
-    
-    <div class="founder-story">
+    <section class="section">
+      <div class="section-inner">
+        <div class="founder-story">
       <div class="founder-story-header">
         <h2>Built From Necessity.</h2>
         <p>This isn't theory. This is my life.</p>
@@ -114,7 +270,8 @@
         <p>
           Nine months ago, I hit a low point. I was struggling with worrisome TBI setbacks. I felt I would not be able to get the help that I needed. I had to use my skills to help myself.
         </p>
-<p>That feeling brought to mind one of my heroes, the musician <strong>Vic Chesnutt</strong>. He wasa brilliant, wheelchair bound quadriplegic artist. He was lost to despair over a system that failed him. He needed $50k for a surgury and couldn't get the money. He chose not to continue the struggle.His story became my mission: How many other capable people are struggling, their potential locked away by challenges that the right tools could help overcome? How many geniuses must we lose due to lack of a safety net?
+            <p>
+              That feeling brought to mind one of my heroes, the musician <strong>Vic Chesnutt</strong>. He was a brilliant, wheelchair bound quadriplegic artist. He was lost to despair over a system that failed him. He needed $50k for a surgery and couldn't get the money. He chose not to continue the struggle. His story became my mission: How many other capable people are struggling, their potential locked away by challenges that the right tools could help overcome? How many geniuses must we lose due to lack of a safety net?
         </p>
         <p style="margin-top: 1.5em;">
           The spark for Emryk&trade; was a realization: a truly private AI, could become a trusted partner trained on my life. It evolved into a reasoning engine, free from the cruft and slop of commercial AI. A tool alone isn't enough. It needed a source of empathy. That's why the vision grew into a <strong>collaborative peer-support system.</strong>
@@ -123,19 +280,29 @@
           Imagine an AI that learns an individual's unique needs, guided by the insight of their human peer support specialist. As the specialist adapts to the patient, so does the AI. This is the future of Emryk&trade;—and I'm already working with my own specialist to prove it. This is more than a product; it’s a mission to unlock potential, and to do it with privacy, dignity, and independence. Emryk is here to help. On your terms.
         </p>
       </div>
-    </div>
+        </div>
+      </div>
+    </section>
 
-    <div class="beta-form">
+    <section class="section">
+      <div class="section-inner">
+        <div class="beta-form">
       <form name="beta-interest" method="POST" data-netlify="true">
         <div class="form-group">
           <input type="email" name="email" class="form-input" placeholder="Enter your email" required>
         </div>
-        <button type="submit" class="cta-button">Request Private Beta + Club Invite</button>
+        <button type="submit" class="cta-button"><span>Request Private Beta + Club Invite</span></button>
       </form>
       <p class="form-note">Invites are limited. We respect your privacy.</p>
-    </div>
+        </div>
+      </div>
+    </section>
   </div>
   
-  <footer class="footer">&copy; 2025 Emryk LLC. All Rights Reserved.</footer>
+  <footer class="footer">
+    <div class="container">
+      &copy; 2025 Emryk LLC. All Rights Reserved.
+    </div>
+  </footer>
 </body>
 </html>
